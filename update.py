@@ -37,12 +37,12 @@ try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
 except:
-    UPSTREAM_REPO = "https://github.com/savitarf/rc2"
+    UPSTREAM_REPO = "https://github.com/savitarf/rc3"
 try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
 except:
-    UPSTREAM_BRANCH = 'master'
+    UPSTREAM_BRANCH = 'update'
 
 if ospath.exists('.git'):
     srun(["rm", "-rf", ".git"])
